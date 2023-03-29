@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
+@WidgetbookApp.material(
+  devices: [Apple.iPhone12],
+  textScaleFactors: [
+    1,
+    2,
+    3,
+  ],
+)
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
