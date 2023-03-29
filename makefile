@@ -7,4 +7,4 @@ br:
 	$(FLUTTER) pub run build_runner build --delete-conflicting-outputs
 
 wb:
-	$(FLUTTER) run lib/core/app.widgetbook.dart -d chrome
+	$(FLUTTER) run lib/main.widgetbook.dart -d chrome
