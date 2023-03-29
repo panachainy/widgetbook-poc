@@ -4,8 +4,10 @@
 // WidgetbookGenerator
 // **************************************************************************
 
+import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
+import 'package:widgetbook_poc/main.dart';
 
 void main() {
   runApp(HotReload());
@@ -18,6 +20,20 @@ class HotReload extends StatelessWidget {
   Widget build(BuildContext context) {
     return Widgetbook.material(
       addons: [
+        CustomThemeAddon<ThemeData>(
+          setting: ThemeSetting<ThemeData>(
+            themes: [
+              WidgetbookTheme(
+                name: 'Dark',
+                data: getDarkTheme(),
+              ),
+            ],
+            activeTheme: WidgetbookTheme(
+              name: 'Dark',
+              data: getDarkTheme(),
+            ),
+          ),
+        ),
         TextScaleAddon(
           setting: TextScaleSetting(
             textScales: [

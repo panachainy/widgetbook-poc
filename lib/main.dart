@@ -5,6 +5,17 @@ void main() {
   runApp(const MyApp());
 }
 
+@WidgetbookLocales()
+final locales = <Locale>[
+  Locale('en'),
+  Locale('th'),
+];
+
+@WidgetbookTheme(name: 'Dark', isDefault: true)
+ThemeData getDarkTheme() => ThemeData(
+      primarySwatch: Colors.blue,
+    );
+
 @WidgetbookApp.material(
   devices: [Apple.iPadMini, Apple.iPhone12],
   textScaleFactors: [
@@ -12,6 +23,8 @@ void main() {
     2,
     3,
   ],
+  foldersExpanded: true,
+  widgetsExpanded: true,
 )
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
