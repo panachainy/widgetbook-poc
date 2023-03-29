@@ -36,33 +36,16 @@ class HotReload extends StatelessWidget {
                 setting: DeviceSetting(
                   devices: [
                     Device(
-                      name: 'iPhone 12',
+                      name: '7.9" iPad mini',
                       resolution: Resolution(
                         nativeSize: DeviceSize(
-                          height: 2532.0,
-                          width: 1170.0,
+                          height: 1024.0,
+                          width: 768.0,
                         ),
-                        scaleFactor: 3.0,
+                        scaleFactor: 2.0,
                       ),
-                      type: DeviceType.mobile,
+                      type: DeviceType.tablet,
                     ),
-                  ],
-                  activeDevice: Device(
-                    name: 'iPhone 12',
-                    resolution: Resolution(
-                      nativeSize: DeviceSize(
-                        height: 2532.0,
-                        width: 1170.0,
-                      ),
-                      scaleFactor: 3.0,
-                    ),
-                    type: DeviceType.mobile,
-                  ),
-                ),
-              ),
-              WidgetbookFrame(
-                setting: DeviceSetting(
-                  devices: [
                     Device(
                       name: 'iPhone 12',
                       resolution: Resolution(
@@ -76,15 +59,54 @@ class HotReload extends StatelessWidget {
                     ),
                   ],
                   activeDevice: Device(
-                    name: 'iPhone 12',
+                    name: '7.9" iPad mini',
                     resolution: Resolution(
                       nativeSize: DeviceSize(
-                        height: 2532.0,
-                        width: 1170.0,
+                        height: 1024.0,
+                        width: 768.0,
                       ),
-                      scaleFactor: 3.0,
+                      scaleFactor: 2.0,
                     ),
-                    type: DeviceType.mobile,
+                    type: DeviceType.tablet,
+                  ),
+                ),
+              ),
+              WidgetbookFrame(
+                setting: DeviceSetting(
+                  devices: [
+                    Device(
+                      name: '7.9" iPad mini',
+                      resolution: Resolution(
+                        nativeSize: DeviceSize(
+                          height: 1024.0,
+                          width: 768.0,
+                        ),
+                        scaleFactor: 2.0,
+                      ),
+                      type: DeviceType.tablet,
+                    ),
+                    Device(
+                      name: 'iPhone 12',
+                      resolution: Resolution(
+                        nativeSize: DeviceSize(
+                          height: 2532.0,
+                          width: 1170.0,
+                        ),
+                        scaleFactor: 3.0,
+                      ),
+                      type: DeviceType.mobile,
+                    ),
+                  ],
+                  activeDevice: Device(
+                    name: '7.9" iPad mini',
+                    resolution: Resolution(
+                      nativeSize: DeviceSize(
+                        height: 1024.0,
+                        width: 768.0,
+                      ),
+                      scaleFactor: 2.0,
+                    ),
+                    type: DeviceType.tablet,
                   ),
                 ),
               ),

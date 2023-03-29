@@ -6,7 +6,7 @@ void main() {
 }
 
 @WidgetbookApp.material(
-  devices: [Apple.iPhone12],
+  devices: [Apple.iPadMini, Apple.iPhone12],
   textScaleFactors: [
     1,
     2,
